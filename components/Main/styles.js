@@ -14,7 +14,6 @@ export default StyleSheet.create({
         
         paddingHorizontal: 7,
         paddingVertical: 7
-
     },
     logo:{
         width: 60,
@@ -33,8 +32,14 @@ export default StyleSheet.create({
     },
     circleCartItens:{
         position: 'absolute',
-        top: 6,
+        top: 10,
         right: 3,
+
+        justifyContent: "center",
+        alignItems: "center",
+
+        width: 22,
+        height: 22,
         
         backgroundColor: 'red',
         borderRadius: 70,
@@ -102,6 +107,102 @@ export default StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         fontWeight: '100'
-    }
+    },
+    gamesList:{
+        flexDirection: "row",
+        flexWrap: "wrap",
+        alignSelf: 'center',
+        
+        width: '100%',
+    },
+    ScrollWrapper:{
+        flexDirection: 'column',
+        justifyContent: "center",
+    
+        width: '42%',
+    
+        marginTop: 60,
+    
+        borderRadius: 20,
+        
+        backgroundColor: '#1E1E1E',
+        
+    },
+    innerItems:{
+        flexDirection: 'row',
+        flexGrow: 1,
+    },
+    itemRate:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+        width: 50,
+        height: 50,
+        
+        marginLeft: -10,
+        marginRight: 15,
+        marginTop: -15,
+        
+        borderRadius: 40,
+        backgroundColor: 'red',
+        zIndex: 10
+    },
+    itemText:{
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold'
+    },
+    cover:{
+        height: 120,
+        width: 95,
+
+        marginTop: -40,
+        marginLeft: -5,
+    },
+    gameName:{
+        alignSelf: "center",
+        textAlignVertical: "center",
+
+        width: '80%',
+        height: 40,
+
+        marginTop: 10,
+
+        color: '#fff',
+        fontSize: 17,
+        textAlign: "center"
+    },
+    gamePrice:{
+        alignSelf: "center",
+
+        width: '80%',
+
+        marginVertical: 3,
+
+        color: '#fff',
+        fontSize: 23,
+        fontWeight: 'bold',
+        textAlign: "center"
+    },
+    buttomToCart:{
+        alignSelf: "center",
+        justifyContent: 'center',
+        alignItems: 'center',
+
+        width: '90%',
+        height: 25,
+
+        marginBottom: 15,
+        marginTop: 10,
+
+        borderRadius: 22,
+
+        backgroundColor: '#487714'
+    },
+    buttomToCartText:{
+        color: '#fff',
+        fontSize: 15,
+    },
+
 
 })
