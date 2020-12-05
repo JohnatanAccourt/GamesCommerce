@@ -21,7 +21,7 @@ from '../../utils/util';
 
 export default function Main({ navigation }){
     const [data, setData] = useState([]);
-    const [numCart, setNumCart] = useState(0);
+    // const [numCart, setNumCart] = useState(0);
     
     var ArrayGames = [];
 
@@ -45,7 +45,6 @@ export default function Main({ navigation }){
     }
 
     async function handleToCart(data){
-        console.log(ArrayGames)
         try{
             let items = await AsyncStorage.getItem('@Game');
             items = JSON.parse(items);
@@ -65,7 +64,6 @@ export default function Main({ navigation }){
                 }
                 await AsyncStorage.setItem('@Game', JSON.stringify(ArrayGames));
                 Toast.show('Adicionado ao Carrinho');
-                
             }
             
         }catch(err){
@@ -75,10 +73,15 @@ export default function Main({ navigation }){
 
     return(
         <View style={styles.container}>
+            <Header 
+                backToHome={null} 
+                showArrow={false} 
+                showCart={true} 
+                onPress={() => navigation.navigate('cart')} 
+            />
             <FlatList 
                 ListHeaderComponent={
                     <>
-                        <Header backToHome={null} showArrow={false} showCart={false} numItens={numCart} onPress={() => navigation.navigate('cart')} />
                         <Swipe />
                         <Filters 
                             onPressAlpha={() => orderListToAlpha()} 

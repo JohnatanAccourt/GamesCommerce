@@ -61,14 +61,13 @@ export default StyleSheet.create({
     swipper:{},
 
     slide:{
-        height: 250
-    },
-    slideImage:{
-        width: '100%',
-        height: 350,  
+        height: 250,
+        justifyContent:"center",
+        alignItems: "center"
     },
     title:{
-        marginVertical: 15,
+        marginVertical: 10,
+        marginBottom: 20,
 
         color: '#fff',
         fontSize: 19,
@@ -99,9 +98,12 @@ export default StyleSheet.create({
         alignItems: "center",
         
         margin: 4,
-        paddingVertical: 6,
 
-        backgroundColor: '#FF7777'
+        padding: 10,
+
+        borderRadius: 5,
+
+        backgroundColor: '#0b92bf'
     },
     FilterText:{
         color: '#fff',
@@ -144,8 +146,17 @@ export default StyleSheet.create({
         marginTop: -15,
         
         borderRadius: 40,
-        backgroundColor: 'red',
+        backgroundColor: '#d6b617',
         zIndex: 10
+    },
+    green:{
+        backgroundColor: 'green',
+    },
+    orange:{
+        backgroundColor: '#ba6c1a',
+    },
+    red:{
+        backgroundColor: 'red',
     },
     itemText:{
         color: '#fff',

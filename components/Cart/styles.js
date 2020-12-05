@@ -104,6 +104,25 @@ export default StyleSheet.create({
         color: '#fff',
         fontSize: 16,
         fontWeight: 'bold'
+    },
+
+    emptyWrapper:{
+        height: '100%',
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    emptyTextBold:{
+        color: '#fff',
+        fontSize: 36,
+        fontWeight: 'bold',
+        textAlign: "center"
+    },
+    emptyText:{
+        width: '70%',
+
+        color: '#fff',
+        fontSize: 18,
+        textAlign: "center"
     }
 
 })
